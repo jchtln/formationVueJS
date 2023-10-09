@@ -10,9 +10,9 @@
  * 
   */
 
-const multiplyByTwo = (array) => {
+const multiplyByTwo = (array) => 
   array.map(i => i * 2);
-}
+
 
 console.log(multiplyByTwo([5,1,2,6]))
 /**
@@ -25,9 +25,9 @@ console.log(multiplyByTwo([5,1,2,6]))
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = (array) => {
-  array.filter(i => i.charAt(0).toUpperCase() === 'A')
-}
+const filterNameStartByA = (array) => 
+  array.filter(i => i[0] === 'A')
+
 
 console.log(filterNameStartByA(["Art","Apporter","amener","Discuter"]));
 
@@ -41,9 +41,9 @@ console.log(filterNameStartByA(["Art","Apporter","amener","Discuter"]));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = (array) => {
+const sum = (array) => 
   array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-}
+
 
 console.log(sum([4,5,6,0,1]));
 
@@ -66,9 +66,15 @@ console.log(sum([4,5,6,0,1]));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (array, id) => {
-  
-}
+const findUserById = (array, id) => (array.find(i => i.id === id)?.name ?? "404"
 
+const d =  [
+    {id: 1, name: 'John'},
+    {id: 2, name: 'Doe'},
+    {id: 3, name: 'Foo'},
+   {id: 4, name: 'Bar'},
+  ]
+
+  console.log(findUserById(d,3));
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
