@@ -7,13 +7,14 @@
  */
 
 function gettingStarted() {
-  return "hello world !";
+  return "hello world !!";
 }
 
 /**
  * Comment me tester ? 
  */
 console.log(gettingStarted());
+
 //$> node ./gettingStarted.js
 
 
