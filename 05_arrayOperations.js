@@ -26,7 +26,7 @@ console.log(multiplyByTwo([5,1,2,6]))
   */
 
 const filterNameStartByA = (array) => 
-  array.filter(i => i[0] === 'A')
+  array.filter(i => i[0] === 'A');
 
 
 console.log(filterNameStartByA(["Art","Apporter","amener","Discuter"]));
@@ -66,7 +66,7 @@ console.log(sum([4,5,6,0,1]));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (array, id) => (array.find(i => i.id === id)?.name ?? "404";
+const findUserById = (array, id) => (array.find(i => i.id === id)?.name ?? "404")
 const d =  [
   {id: 1, name: 'John'},
   {id: 2, name: 'Doe'},

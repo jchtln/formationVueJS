@@ -15,7 +15,16 @@
  * doit renvoyer "admin"
  * 
  */
-
-const getGroupName = (obj) => {}
+const getGroupName = (obj) => {
+    if (!obj) return undefined
+    if (!obj.group) return undefined
+    return obj.group.name;
+  };
+  const getGroupName2 = (obj) => {
+    return obj?.group?.name;
+  }
+  const getGroupName3 = (obj) => obj?.group?.name;
+  console.log(getGroupName3({group: {name: "admin"}}));
+  
 
 module.exports = {getGroupName};
